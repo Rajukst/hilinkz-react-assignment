@@ -1,4 +1,4 @@
-import { TextField } from "@mui/material";
+import { TextField, Typography } from "@mui/material";
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -6,12 +6,21 @@ import {
   faLocationArrow,
   faSearchLocation,
 } from "@fortawesome/free-solid-svg-icons";
+import "./FromComponent.css";
 const FromComponent = () => {
   return (
     <div>
-      <h1>This is From Component</h1>
-      <FontAwesomeIcon icon={faSearchLocation} />
+      <Typography
+        className="alignment-text"
+        variant="h5"
+        gutterBottom
+        component="div"
+      >
+        From
+      </Typography>
+
       <TextField
+        className="my-from"
         id="filled-basic"
         label="Select Destination"
         variant="filled"

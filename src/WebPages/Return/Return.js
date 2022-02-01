@@ -6,11 +6,19 @@ import DatePicker from "@mui/lab/DatePicker";
 
 import Stack from "@mui/material/Stack";
 import DesktopDatePicker from "@mui/lab/DesktopDatePicker";
+import { Typography } from "@mui/material";
 const Return = () => {
   const [value, setValue] = React.useState(new Date());
   return (
     <div>
-      <h1> Return</h1>
+      <Typography
+        className="alignment-text"
+        variant="h5"
+        gutterBottom
+        component="div"
+      >
+        Return
+      </Typography>
       <div className="my-date">
         <LocalizationProvider dateAdapter={AdapterDateFns}>
           <Stack spacing={3}>

@@ -1,7 +1,7 @@
 import { TextField, Typography } from "@mui/material";
 import React from "react";
 
-const ToComponent = () => {
+const VoucherCode = () => {
   return (
     <div>
       <Typography
@@ -10,16 +10,16 @@ const ToComponent = () => {
         gutterBottom
         component="div"
       >
-        To
+        Voucher or event code
       </Typography>
       <TextField
         className="my-from"
-        id="filled-basic"
-        label="Select destination"
-        variant="filled"
+        id="standard-basic"
+        label="Enter code"
+        variant="standard"
       />
     </div>
   );
 };
 
-export default ToComponent;
+export default VoucherCode;
